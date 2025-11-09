@@ -90,32 +90,39 @@
       <h2>Stay Informed. Stay Empowered.</h2>
       <p>Receive text messages with the news you want to know.</p>
       <form action="https://wp.zybooks.com/form-viewer.php" method="post">
-        Name
-        
-        Mobile
-        
-        Notification Preferences
-        
-        Breaking News
-        Politics
-        Weather
-        Sports
-        Entertainment
-        World
-        Financial
-        
-        Subscribe
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+        <label for="phone">Mobile</label>
+        <input type="tel" id="phone" name="phone" required>
+        <fieldset>
+          <legend>Notification Preferences</legend>
+          <input type="checkbox" id="option1" name="preference" value="Breaking News">
+          <label for="option1">Breaking News</label>
+          <input type="checkbox" id="option2" name="preference" value="Politics">
+          <label for="option2">Politics</label>
+          <input type="checkbox" id="option3" name="preference" value="Weather">
+          <label for="option3">Weather</label>
+          <input type="checkbox" id="option4" name="preference" value="Sports">
+          <label for="option4">Sports</label>
+          <input type="checkbox" id="option5" name="preference" value="Entertainment">
+          <label for="option5">Entertainment</label>
+          <input type="checkbox" id="option6" name="preference" value="World">
+          <label for="option6">World</label>
+          <input type="checkbox" id="option7" name="preference" value="Financial">
+          <label for="option7">Financial</label>
+        </fieldset>
+        <input type="submit" value="Subscribe">
       </form>
     </section>
     <section id="social">
-      Follow Us
-        Twitter/X
-        Instagram
-        YouTube
-        TikTok
-        LinkedIn
+      <h2>Follow Us</h2>
+        <a href="https://x.com/">Twitter/X</a>
+        <a href="https://www.instagram.com/">Instagram</a>
+        <a href="https://www.youtube.com/">YouTube</a>
+        <a href="https://www.tiktok.com/en/">TikTok</a>
+        <a href="https://www.linkedin.com/">LinkedIn</a>
     </section>
-        &copy; 2025 Civic Lens. All rights reserved.
+        <p>&copy; 2025 Civic Lens. All rights reserved.</p>
   </footer>      
         
   <script>
