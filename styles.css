@@ -85,8 +85,8 @@ body.dark-mode {
   cursor: pointer;
 }
 
-/* ///ADD/// Skip Link Styles */
-.skip-link {
+/* Skip Link Styles */
+.skip-link{
   position: absolute;
   left: -10000px;
   top: auto;
