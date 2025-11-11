@@ -102,8 +102,66 @@ body.dark-mode {
 }
 
 /* ///ADD/// Navigation Styles */
+nav label {
+  background-color: var(--news-flash);
+  color: var(--watchdog-white);
+  padding: .5rem 13.5rem;
+  margin: 1rem;
+  font-family: var(--font-body);
+  text-transform: uppercase;
+  font-size: 18px;
+  display: inline-block;
+}
+
+nav ul {
+  visibility: hidden;
+  position: absolute;
+  transition: var(--transition);
+  opacity: 0;
+  background-color: var(--news-flash);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  transition: var(--transition);
+}
+
+nav:hover ul {
+  visibility: visible;
+  opacity: 1;
+  margin: 1rem;
+  background-color: var(--blue-bulletin);
+}
+
+nav ul li a {
+  display: block;
+  color: var(--watchdog-white);
+  text-decoration: none;
+  padding: .75rem 11rem;
+  font-family: var(--font-body);
+  text-transform: uppercase;
+  margin: 2px;
+  margin-top: 0;
+  text-align: center;
+  background-color: var(--news-flash);
+}
+
+nav ul li a:hover {
+  background-color: var(--blue-bulletin);
+}
 
 /* ///ADD/// Global Layout Styles */
+html {
+  background-color: var(--watchdog-white);
+}
+
+main {
+  margin: 1rem;
+}
+
+header {
+  background-color: var(--blue-bulletin);
+  color: var(--watchdog-white);
+}
 
 /* ///ADD/// Global Text Styles */
 
