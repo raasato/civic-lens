@@ -101,7 +101,8 @@ body.dark-mode {
   height: auto;
 }
 
-/* ///ADD/// Navigation Styles */
+/* Navigation Styles */
+
 nav label {
   background-color: var(--news-flash);
   color: var(--watchdog-white);
@@ -111,6 +112,12 @@ nav label {
   text-transform: uppercase;
   font-size: 18px;
   display: inline-block;
+}
+
+nav label:hover {
+  background-color: var(--blue-bulletin);
+  color: var(--watchdog-white);
+  border: var(--news-flash) 1px solid;
 }
 
 nav ul {
