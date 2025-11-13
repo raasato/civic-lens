@@ -188,6 +188,11 @@ blockquote {
   font-family: var(--font-body);
 }
 
+#breaking-news section:hover, #featured-articles section:hover {
+  transform: scale(1.05);
+  transition: var(--transition);
+}
+
 video {
   margin: .75rem;
   width: 95%;
@@ -231,6 +236,10 @@ legend {
 
 fieldset div {
   margin: .5rem;
+}
+
+input[type="checkbox"] {
+  accent-color: var(--blue-bulletin);
 }
 
 #submit {
