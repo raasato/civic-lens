@@ -225,6 +225,10 @@ fieldset {
   border: 1px solid var(--blue-bulletin);
 }
 
+legend {
+  padding-top: .5rem;
+}
+
 fieldset div {
   margin: .5rem;
 }
@@ -270,6 +274,18 @@ h1 {
   font-weight: 100;
 }
 
+h2 {
+  padding-bottom: .5rem;
+  font-size: 25px;
+  font-weight: 300;
+}
+
+h3 {
+  padding-bottom: .25rem;
+  font-size: 20px;
+  font-weight: 200;
+}
+
 p, a {
   font-family: var(--font-body);
   font-weight: 300;
@@ -299,13 +315,19 @@ blockquote {
   color: var(--truth-text);
 }
 
+#alerts {
+  padding-top: 1rem;
+}
+
 form {
   color: var(--watchdog-white);
+  font-family: var(--font-body);
 }
 
 #submit {
   color: var(--watchdog-white);
   text-transform: uppercase;
+  font-size: 18px;
 }
 
 footer {
@@ -314,6 +336,7 @@ footer {
 
 #social a {
   text-transform: uppercase;
+  font-weight: 500;
 }
 /* ///ADD/// medium styles 620px */
 
