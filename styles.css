@@ -137,6 +137,7 @@ nav:hover ul {
   opacity: 1;
   margin: 1rem;
   background-color: var(--blue-bulletin);
+  transition: var(--transition);
 }
 
 nav ul li a {
@@ -154,6 +155,7 @@ nav ul li a {
 
 nav ul li a:hover {
   background-color: var(--blue-bulletin);
+  transition: var(--transition);
 }
 
 /* ///ADD/// Global Layout Styles */
@@ -167,12 +169,152 @@ main {
 
 header {
   background-color: var(--blue-bulletin);
+}
+
+#about {
+  margin: 1rem;
+}
+
+blockquote {
+  text-align: center;
+  margin: 1.5rem;
+}
+
+#water, #voter {
+  background-color: var(--news-flash);
+  margin: 1rem;
+  box-shadow: var(--shadow);
+  padding: 1rem;
+  font-family: var(--font-body);
+}
+
+video {
+  margin: .75rem;
+  width: 95%;
+  height: auto;
+}
+
+#breaking-news h3 {
+  border-bottom: 1px solid var(--watchdog-white);
+  padding-bottom: .25rem;
+}
+
+#whistleblower, #unequal, #invisible, #redlined, #climate, #teaching, #food, #mental, #economy, #algorithm, #maze, #cameras {
+  border: 1px solid var(--truth-text);
+  box-shadow: var(--shadow);
+  margin: 1rem;
+  padding: 1rem;
+}
+
+#featured-articles h3 {
+  border-bottom: 1px solid var(--truth-text);
+  padding-bottom: .25rem;
+}
+
+form {
+  background-color: var(--news-flash);
   color: var(--watchdog-white);
+  display: grid;
+  padding: 1rem;
+  gap: .25rem;
+  box-shadow: var(--shadow);
+  margin: 1rem 2rem 2rem 1rem;
+}
+
+fieldset {
+  border: 1px solid var(--blue-bulletin);
+}
+
+fieldset div {
+  margin: .5rem;
+}
+
+#submit {
+  background-color: var(--blue-bulletin);
+  padding: 1rem;
+}
+
+footer {
+  background-color: var(--blue-bulletin);
+  padding: 2rem;
+}
+
+#social h2 {
+  padding-bottom: 1rem;
+}
+
+#social a {
+  background-color: var(--news-flash);
+  padding: .5rem;
+  text-decoration: none;
+  color: var(--watchdog-white);
+  margin: .5rem;
+  display: inline-flex;
+}
+
+footer p {
+  margin-top: 3rem;
+  text-align: center;
 }
 
 /* ///ADD/// Global Text Styles */
+h1, h2, h3 {
+  font-family: var(--font-heading);
+}
 
+h1 {
+  padding-left: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  font-size: 50px;
+  font-weight: 100;
+}
 
+p, a {
+  font-family: var(--font-body);
+  font-weight: 300;
+}
+
+header {
+  color: var(--watchdog-white);
+}
+
+header p {
+  padding-left: 2rem;
+  font-size: 18px;
+  font-family: var(--font-heading);
+}
+
+blockquote {
+  font-weight: 600;
+  font-size: 15px;
+  font-family: var(--font-heading);
+}
+
+#water, #voter {
+  color: var(--watchdog-white);
+}
+
+#whistleblower, #unequal, #invisible, #redlined, #climate, #teaching, #food, #mental, #economy, #algorithm, #maze, #cameras {
+  color: var(--truth-text);
+}
+
+form {
+  color: var(--watchdog-white);
+}
+
+#submit {
+  color: var(--watchdog-white);
+  text-transform: uppercase;
+}
+
+footer {
+  color: var(--watchdog-white);
+}
+
+#social a {
+  text-transform: uppercase;
+}
 /* ///ADD/// medium styles 620px */
 
 

@@ -46,90 +46,133 @@
     </nav>
   </header>
   <main id="main">
+    <section id="about">
       <h2>Welcome to Civic Lens</h2>
-        <p>We are an independent news organization dedicated to unbiased reporting, investigative journalism, and truth-driven storytelling. At Civic Lens, our mission is to expose the facts, amplify marginalized voices, and shine light on the systems that shape our society.</p>
-        <blockquote class="tagline">“We don't follow the narrative. We follow the facts.”</blockquote>
-      <section id="breaking-news">
-        <h2>Breaking News</h2>
-          <h3>Federal Investigation Launched into Water Mismanagement in the Southwest</h3>
-          <p>The Department of Justice has announced a full investigation into decades of water distribution practices affecting tribal lands and rural communities.</p>
-          <video height="432" width="768" controls>
-            <source src="videos/water-management.mp4" type="video/mp4">
-          </video>
+      <p>We are an independent news organization dedicated to unbiased reporting, investigative journalism, and truth-driven storytelling. At Civic Lens, our mission is to expose the facts, amplify marginalized voices, and shine light on the systems that shape our society.</p>
+      <blockquote class="tagline">“We don't follow the narrative. We follow the facts.”</blockquote>
+    </section>
+    <section id="breaking-news">
+      <h2>Breaking News</h2>
+      <section id="water">
+        <h3>Federal Investigation Launched into Water Mismanagement in the Southwest</h3>
+        <p>The Department of Justice has announced a full investigation into decades of water distribution practices affecting tribal lands and rural communities.</p>
+        <video controls>
+          <source src="videos/water-management.mp4" type="video/mp4">
+        </video>
+      </section>
+      <section id="voter">
         <h3>Voter Suppression Bill Faces Pushback in State Supreme Court</h3>
         <p>Civil rights advocates argue that the bill disenfranchises thousands of voters and potential voters of color and those in rural areas of the country.</p>
-        <video height="432" width="768" controls>
+        <video controls>
           <source src="videos/voter-suppression.mp4" type="video/mp4">
         </video>
       </section>
+    </section>
       <section id="featured-articles">
         <h2>Featured Articles</h2>
-          <h3>The Cost of Silence: Whistleblower Stories from Inside Tech Giants</h3>
-          <p>Former employees speak out about ethical breaches in data privacy and surveillance.</p>
-          <h3>Unequal Justice: How Bail Systems Harm the Poor</h3>
-          <p>An investigative series on cash bail and its disproportionate impact.</p>    
-          <h3>Invisible Work: The Lives of Migrant Caregivers</h3>
-          <p>Humanizing the labor that keeps households and economies afloat.</p>    
-          <h3>Redlined Still: A New Map of Modern-Day Housing Discrimination</h3>
-          <p>Data visualization showing systemic inequality in real estate today.</p>   
-          <h3>Climate Injustice: Who Pays for Pollution?</h3>
-          <p>Communities of color bear the brunt of environmental damage.</p>    
-          <h3>Teaching Under Fire: The Fight for Inclusive Education</h3>
-          <p>Teachers navigate book bans, curriculum restrictions, and culture wars.</p>     
-          <h3>Food Deserts and Corporate Abandonment</h3>
-          <p>Why access to nutrition is a zip code lottery.</p>    
-          <h3>Policing Mental Health: A Broken Response System</h3>
-          <p>Examining police interactions with those in crisis.</p>    
-          <h3>The Disinformation Economy</h3>
-          <p>Tracing profit motives behind fake news empires.</p>    
-          <h3>Facing the Algorithm: AI and Racial Bias</h3>
-          <p>The coded inequalities that shape our lives.</p>   
-          <h3>The Voting Maze</h3>
-          <p>A guide to understanding your rights amid changing laws.</p>    
-          <h3>After the Cameras Leave: Long-Term Crisis Recovery</h3>
-          <p>Rebuilding trust and infrastructure in disaster-hit communities.</p>
+          <section id="whistleblower">
+            <h3>The Cost of Silence: Whistleblower Stories from Inside Tech Giants</h3>
+            <p>Former employees speak out about ethical breaches in data privacy and surveillance.</p>
+          </section>
+          <section id="unequal">
+            <h3>Unequal Justice: How Bail Systems Harm the Poor</h3>
+            <p>An investigative series on cash bail and its disproportionate impact.</p>
+          </section>
+          <section id="invisible">
+            <h3>Invisible Work: The Lives of Migrant Caregivers</h3>
+            <p>Humanizing the labor that keeps households and economies afloat.</p>    
+          </section>
+          <section id="redlined">
+            <h3>Redlined Still: A New Map of Modern-Day Housing Discrimination</h3>
+            <p>Data visualization showing systemic inequality in real estate today.</p>
+          </section>
+          <section id="climate">
+            <h3>Climate Injustice: Who Pays for Pollution?</h3>
+            <p>Communities of color bear the brunt of environmental damage.</p>    
+          </section>
+          <section id="teaching">
+            <h3>Teaching Under Fire: The Fight for Inclusive Education</h3>
+            <p>Teachers navigate book bans, curriculum restrictions, and culture wars.</p>     
+          </section>
+          <section id="food">
+            <h3>Food Deserts and Corporate Abandonment</h3>
+            <p>Why access to nutrition is a zip code lottery.</p>    
+          </section>
+          <section id="mental">
+            <h3>Policing Mental Health: A Broken Response System</h3>
+            <p>Examining police interactions with those in crisis.</p>    
+          </section>
+          <section id="economy">
+            <h3>The Disinformation Economy</h3>
+            <p>Tracing profit motives behind fake news empires.</p>    
+          </section>
+          <section id="algorithm">
+            <h3>Facing the Algorithm: AI and Racial Bias</h3>
+            <p>The coded inequalities that shape our lives.</p>   
+          </section>
+          <section id="maze">
+            <h3>The Voting Maze</h3>
+            <p>A guide to understanding your rights amid changing laws.</p>    
+          </section>
+          <section id="cameras">
+            <h3>After the Cameras Leave: Long-Term Crisis Recovery</h3>
+            <p>Rebuilding trust and infrastructure in disaster-hit communities.</p>
+          </section>
+      </section>
+      <section id="alerts">    
+        <h2>Stay Informed. Stay Empowered.</h2>
+        <p>Receive text messages with the news you want to know.</p>
+        <form action="https://wp.zybooks.com/form-viewer.php" method="post">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+          <label for="phone">Mobile</label>
+          <input type="tel" id="phone" name="phone" required>
+          <fieldset>
+            <legend>Notification Preferences</legend>
+            <div>
+              <input type="checkbox" id="option1" name="preference" value="Breaking News">
+              <label for="option1">Breaking News</label>
+            </div>
+            <div>
+              <input type="checkbox" id="option2" name="preference" value="Politics">
+              <label for="option2">Politics</label>
+            </div>
+            <div>
+              <input type="checkbox" id="option3" name="preference" value="Weather">
+              <label for="option3">Weather</label>
+            </div>
+            <div>
+              <input type="checkbox" id="option4" name="preference" value="Sports">
+              <label for="option4">Sports</label>
+            </div>
+            <div>
+              <input type="checkbox" id="option5" name="preference" value="Entertainment">
+              <label for="option5">Entertainment</label>
+            </div>
+            <div>
+              <input type="checkbox" id="option6" name="preference" value="World">
+              <label for="option6">World</label>
+            </div>
+            <div>
+              <input type="checkbox" id="option7" name="preference" value="Financial">
+              <label for="option7">Financial</label>
+            </div>
+          </fieldset>
+          <input type="submit" value="Subscribe" id="submit">
+        </form>
       </section>
   </main>
   <footer>
-    <section id="alerts">    
-      <h2>Stay Informed. Stay Empowered.</h2>
-      <p>Receive text messages with the news you want to know.</p>
-      <form action="https://wp.zybooks.com/form-viewer.php" method="post">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" required>
-        <label for="phone">Mobile</label>
-        <input type="tel" id="phone" name="phone" required>
-        <fieldset>
-          <legend>Notification Preferences</legend>
-          <input type="checkbox" id="option1" name="preference" value="Breaking News">
-          <label for="option1">Breaking News</label>
-          <input type="checkbox" id="option2" name="preference" value="Politics">
-          <label for="option2">Politics</label>
-          <input type="checkbox" id="option3" name="preference" value="Weather">
-          <label for="option3">Weather</label>
-          <input type="checkbox" id="option4" name="preference" value="Sports">
-          <label for="option4">Sports</label>
-          <input type="checkbox" id="option5" name="preference" value="Entertainment">
-          <label for="option5">Entertainment</label>
-          <input type="checkbox" id="option6" name="preference" value="World">
-          <label for="option6">World</label>
-          <input type="checkbox" id="option7" name="preference" value="Financial">
-          <label for="option7">Financial</label>
-        </fieldset>
-        <input type="submit" value="Subscribe">
-      </form>
-    </section>
-    <section id="social">
-      <h2>Follow Us</h2>
+      <section id="social">
+        <h2>Follow Us</h2>
         <a href="https://x.com/">Twitter/X</a>
         <a href="https://www.instagram.com/">Instagram</a>
         <a href="https://www.youtube.com/">YouTube</a>
         <a href="https://www.tiktok.com/en/">TikTok</a>
         <a href="https://www.linkedin.com/">LinkedIn</a>
-    </section>
-        <p>&copy; 2025 Civic Lens. All rights reserved.</p>
-  </footer>      
-        
+      </section>
+      <p>&copy; Civic Lens. All rights reserved.</p>
+    </footer>
   <script>
     const toggleButton = document.getElementById('theme-toggle');
   
