@@ -403,6 +403,7 @@ footer {
   nav ul {
     display: flex;
     flex-direction: row;
+    gap: .5rem;
     position: relative;
     visibility: visible;
     opacity: 1;
@@ -418,6 +419,43 @@ footer {
   nav ul li a:hover {
     margin: 2rem;
   }
+
+  #breaking-news, #featured-articles, form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #breaking-news h2, #featured-articles h2 {
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
+
+  #name {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  label[for="phone"] {
+    grid-column-start: 2;
+    grid-column-end: -1;
+    grid-row-start: 1;
+  }
+
+  #phone {
+    grid-column-start: 2;
+    grid-column-end: -1;
+  }
+
+  fieldset {
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
+
+  #submit {
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
+
 }
 
 /* ///ADD/// large styles 920px */
