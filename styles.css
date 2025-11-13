@@ -127,17 +127,16 @@ nav ul {
   opacity: 0;
   background-color: var(--news-flash);
   list-style: none;
-  padding: 0;
-  margin: 0;
   transition: var(--transition);
+  margin: 1rem;
 }
 
 nav:hover ul {
   visibility: visible;
   opacity: 1;
-  margin: 1rem;
   background-color: var(--blue-bulletin);
   transition: var(--transition);
+  justify-content: center;
 }
 
 nav ul li a {
@@ -396,7 +395,30 @@ footer {
   font-weight: 500;
 }
 /* ///ADD/// medium styles 620px */
+@media screen and (min-width: 620px) {
+  .menu-button, #menu-toggle {
+    display: none;
+  }
 
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    visibility: visible;
+    opacity: 1;
+    background-color: var(--blue-bulletin);
+    margin: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  nav ul li a {
+    padding: .25rem .25rem;
+  }
+
+  nav ul li a:hover {
+    margin: 2rem;
+  }
+}
 
 /* ///ADD/// large styles 920px */
 
