@@ -238,6 +238,12 @@ fieldset div {
   padding: 1rem;
 }
 
+#submit:hover {
+  background-color: var(--watchdog-white);
+  color: var(--truth-text);
+  transition: var(--transition);
+}
+
 footer {
   background-color: var(--blue-bulletin);
   padding: 2rem;
@@ -256,6 +262,12 @@ footer {
   display: inline-flex;
 }
 
+#social a:hover {
+  background-color: var(--blue-bulletin);
+  border: 1px solid var(--news-flash);
+  transition: var(--transition);
+}
+
 footer p {
   margin-top: 3rem;
   text-align: center;
@@ -264,6 +276,7 @@ footer p {
 /* ///ADD/// Global Text Styles */
 h1, h2, h3 {
   font-family: var(--font-heading);
+  line-height: normal;
 }
 
 h1 {
@@ -289,6 +302,7 @@ h3 {
 p, a {
   font-family: var(--font-body);
   font-weight: 300;
+  line-height: normal;
 }
 
 header {
@@ -301,6 +315,10 @@ header p {
   font-family: var(--font-heading);
 }
 
+#about h2 {
+  padding-top: 2rem;
+}
+
 blockquote {
   font-weight: 600;
   font-size: 15px;
@@ -311,8 +329,20 @@ blockquote {
   color: var(--watchdog-white);
 }
 
+#breaking-news h2 {
+  padding-bottom: 1rem;
+}
+
+#breaking-news p {
+  padding-top: .5rem;
+}
+
 #whistleblower, #unequal, #invisible, #redlined, #climate, #teaching, #food, #mental, #economy, #algorithm, #maze, #cameras {
   color: var(--truth-text);
+}
+
+#featured-articles p {
+  padding-top: .5rem;
 }
 
 #alerts {
