@@ -102,7 +102,6 @@ body.dark-mode {
 }
 
 /* Navigation Styles */
-
 nav label {
   background-color: var(--news-flash);
   color: var(--watchdog-white);
@@ -136,7 +135,6 @@ nav:hover ul {
   opacity: 1;
   background-color: var(--blue-bulletin);
   transition: var(--transition);
-  justify-content: center;
 }
 
 nav ul li a {
@@ -408,7 +406,6 @@ footer {
     visibility: visible;
     opacity: 1;
     background-color: var(--blue-bulletin);
-    margin: 2rem;
     padding-bottom: 2rem;
   }
 
@@ -417,7 +414,9 @@ footer {
   }
 
   nav ul li a:hover {
-    margin: 2rem;
+    background-color: var(--blue-bulletin);
+    border: 1px solid var(--news-flash);
+    transition: var(--transition);
   }
 
   #breaking-news, #featured-articles, form {
@@ -461,7 +460,17 @@ footer {
 }
 
 /* ///ADD/// large styles 920px */
+@media screen and (min-width: 920px) {
+  #featured-articles {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 
+  fieldset {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
 
 /* ///ADD/// x-large styles 1024px */
 
