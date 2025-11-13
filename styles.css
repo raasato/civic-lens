@@ -449,6 +449,8 @@ footer {
   fieldset {
     grid-column-start: 1;
     grid-column-end: -1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 
   #submit {
