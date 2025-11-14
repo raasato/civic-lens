@@ -473,7 +473,25 @@ footer {
 }
 
 /* ///ADD/// x-large styles 1024px */
+@media screen and (min-width: 1024px) {
+  main {
+    margin: 8em;
+    justify-content: center;
+  }
 
+  h1 {
+    justify-content: center;
+    margin-left: 2em;
+  }
+
+  .tagline {
+    margin-left: 6.5rem;
+  }
+
+  nav {
+    margin-left: 8rem;
+  }
+}
 
 /* ///ADD/// Interaction Queries for color scheme light and dark and motion preference */
 
